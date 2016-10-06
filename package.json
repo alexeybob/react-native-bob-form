@@ -1,0 +1,30 @@
+{
+  "name": "react-native-bob-form",
+  "version": "0.0.1",
+  "description": "React Native Form",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexeybob/react-native-bob-form.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "form"
+  ],
+  "author": {
+    "name": "Alexey Bob",
+    "email": "alexey.bob@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexeybob/react-native-bob-form/issues"
+  },
+  "homepage": "https://github.com/alexeybob/react-native-bob-form#readme"
+}
