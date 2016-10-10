@@ -25,7 +25,8 @@
     "url": "https://github.com/alexeybob/react-native-bob-form/issues"
   },
   "dependencies": {
-    "bob-validator": ">=1.0.0"
+    "bob-validator": ">=1.0.0",
+    "react-native": "^0.20.0"
   },
   "homepage": "https://github.com/alexeybob/react-native-bob-form#readme"
 }
