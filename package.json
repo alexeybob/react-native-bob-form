@@ -1,6 +1,6 @@
 {
   "name": "react-native-bob-form",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "React Native Form",
   "main": "index.js",
   "directories": {
@@ -14,7 +14,8 @@
     "url": "git+https://github.com/alexeybob/react-native-bob-form.git"
   },
   "keywords": [
-    "react native form"
+    "react native form",
+    "react native form components"
   ],
   "author": {
     "name": "Alexey Bob",

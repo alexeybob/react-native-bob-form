@@ -2,7 +2,7 @@
 
 ## Built-in Field Types
 
-ReactNativeBobForm comes standard with a large group of field types that cover all of the common form fields and data types you'll encounter:
+This package comes standard with a large group of field types that cover all of the common form fields and data types you'll encounter:
 
 #### Text Fields
 
