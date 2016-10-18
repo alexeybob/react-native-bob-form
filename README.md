@@ -7,7 +7,7 @@ This package comes standard with a large group of field types that cover all of 
 #### Text Fields
 
 * **TextType**
-* TextareaType
+* **TextareaType**
 * **EmailType**
 * IntegerType
 * MoneyType
