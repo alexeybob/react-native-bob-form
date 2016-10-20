@@ -15,7 +15,7 @@ This package comes standard with a large group of field types that cover all of 
 * **PasswordType**
 * PercentType
 * SearchType
-* UrlType
+* **UrlType**
 * RangeType
 
 #### Choice Fields
