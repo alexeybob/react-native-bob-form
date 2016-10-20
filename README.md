@@ -9,9 +9,9 @@ This package comes standard with a large group of field types that cover all of 
 * **TextType**
 * **TextareaType**
 * **EmailType**
-* IntegerType
-* MoneyType
-* NumberType
+* **IntegerType**
+* **MoneyType**
+* **NumberType**
 * **PasswordType**
 * PercentType
 * SearchType
