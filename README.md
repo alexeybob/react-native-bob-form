@@ -13,7 +13,7 @@ This package comes standard with a large group of field types that cover all of 
 * **MoneyType**
 * **NumberType**
 * **PasswordType**
-* PercentType
+* **PercentType**
 * SearchType
 * **UrlType**
 * RangeType
