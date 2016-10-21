@@ -16,7 +16,7 @@ This package comes standard with a large group of field types that cover all of 
 * **PercentType**
 * SearchType
 * **UrlType**
-* RangeType
+* **RangeType** - @todo: Slider
 
 #### Choice Fields
 

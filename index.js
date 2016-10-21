@@ -13,7 +13,7 @@ var BobForm = {
     get PercentType() { return require('./lib/Form/Extension/Core/Type/PercentType'); },
 //    get SearchType() { return require('./lib/Form/Extension/Core/Type/SearchType'); },
     get UrlType() { return require('./lib/Form/Extension/Core/Type/UrlType'); },
-//    get RangeType() { return require('./lib/Form/Extension/Core/Type/RangeType'); },
+    get RangeType() { return require('./lib/Form/Extension/Core/Type/RangeType'); },
 
 
 
