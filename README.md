@@ -22,9 +22,9 @@ This package comes standard with a large group of field types that cover all of 
 
 #### Choice Fields
 
-* ChoiceType
+* **ChoiceType**
 * EntityType
-* CountryType
+* **CountryType**
 * LanguageType
 * LocaleType
 * TimezoneType
@@ -65,6 +65,7 @@ This package comes standard with a large group of field types that cover all of 
 ---------------
 
 ### Example
+
 ```javascript
 'use strict';
 
@@ -89,7 +90,9 @@ import BobForm, {
     MoneyType,
     PercentType,
     RangeType,
-    ChoiceType
+
+    ChoiceType,
+    CountryType
 } from 'react-native-bob-form';
 
 
@@ -111,7 +114,8 @@ class ReactNativeBobForm extends Component {
             moneyType: '35.28',
             percentType: '.95',
             rangeType: '10',
-            choiceType: 'AG'
+            choiceType: 'AG',
+            countryType: 'US'
         };
     }
 
@@ -129,7 +133,18 @@ class ReactNativeBobForm extends Component {
         return (
             <ScrollView>
                 <View style={{'marginTop': 55}}>
-
+                    <CountryType
+                        options={{
+                            'name': 'countryType',
+                            'nameType': 'name',
+                            'label': 'Country Type',
+                            'data': this.state.countryType,
+                            'preferredChoices': ['AU', 'GB', 'US'],
+                            'placeholder': 'Please select ...'
+                        }}
+                        onChange={this.onChange}
+                        onValidate={this.onValidate}
+                    />
                     <ChoiceType
                         options={{
                             'name': 'choiceType',
@@ -164,7 +179,6 @@ class ReactNativeBobForm extends Component {
                         onChange={this.onChange}
                         onValidate={this.onValidate}
                     />
-
                     <TextType
                         options={{'name': 'textType', 'label': 'Text Type', 'data': this.state.textType}}
                         onChange={this.onChange}
@@ -201,7 +215,7 @@ class ReactNativeBobForm extends Component {
                         onValidate={this.onValidate}
                     />
                     <MoneyType
-                        options={{'name': 'moneyType', 'label': 'Money Type', 'data': this.state.moneyType, 'currency': 'UAH'}}
+                        options={{'name': 'moneyType', 'label': 'Money Type', 'data': this.state.moneyType, 'currency': 'USD'}}
                         onChange={this.onChange}
                         onValidate={this.onValidate}
                     />
@@ -222,7 +236,6 @@ class ReactNativeBobForm extends Component {
 }
 
 export default ReactNativeBobForm;
-
 ```
 
 

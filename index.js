@@ -17,6 +17,7 @@ var BobForm = {
 
     // Choice Fields
     get ChoiceType() { return require('./lib/Form/Extension/Core/Type/ChoiceType'); },
+    get CountryType() { return require('./lib/Form/Extension/Core/Type/CountryType'); },
 
 };
 
