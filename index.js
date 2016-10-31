@@ -2,7 +2,7 @@
 
 // Export BobForm
 var BobForm = {
-    // Types
+    // Text Fields
     get TextType() { return require('./lib/Form/Extension/Core/Type/TextType'); },
     get TextareaType() { return require('./lib/Form/Extension/Core/Type/TextareaType'); },
     get EmailType() { return require('./lib/Form/Extension/Core/Type/EmailType'); },
@@ -15,8 +15,8 @@ var BobForm = {
     get UrlType() { return require('./lib/Form/Extension/Core/Type/UrlType'); },
     get RangeType() { return require('./lib/Form/Extension/Core/Type/RangeType'); },
 
-
-
+    // Choice Fields
+    get ChoiceType() { return require('./lib/Form/Extension/Core/Type/ChoiceType'); },
 
 };
 
