@@ -1,6 +1,6 @@
 # react-native-bob-form
 
-[Example](#Example)
+[Example](#example)
 
 ## Built-in Field Types
 
