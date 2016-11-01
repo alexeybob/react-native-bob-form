@@ -26,7 +26,7 @@ This package comes standard with a large group of field types that cover all of 
 * EntityType
 * **CountryType**
 * **LanguageType**
-* LocaleType
+* **LocaleType**
 * TimezoneType
 * CurrencyType
 
@@ -93,7 +93,8 @@ import BobForm, {
 
     ChoiceType,
     CountryType,
-    LanguageType
+    LanguageType,
+    LocaleType
 } from 'react-native-bob-form';
 
 
@@ -117,7 +118,8 @@ class ReactNativeBobForm extends Component {
             rangeType: '10',
             choiceType: 'AG',
             countryType: 'US',
-            languageType: 'FR'
+            languageType: 'FR',
+            localeType: 'en-GB'
         };
     }
 
@@ -135,6 +137,18 @@ class ReactNativeBobForm extends Component {
         return (
             <ScrollView>
                 <View style={{'marginTop': 55}}>
+                    <LocaleType
+                        options={{
+                            'name': 'localeType',
+                            'nameType': 'name',
+                            'label': 'Locale Type',
+                            'data': this.state.localeType,
+                            'preferredChoices': ['de-CH', 'en-GB', 'fr-CA'],
+                            'placeholder': 'Please select ...'
+                        }}
+                        onChange={this.onChange}
+                        onValidate={this.onValidate}
+                    />
                     <LanguageType
                         options={{
                             'name': 'languageType',
