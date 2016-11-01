@@ -25,7 +25,7 @@ This package comes standard with a large group of field types that cover all of 
 * **ChoiceType**
 * EntityType
 * **CountryType**
-* LanguageType
+* **LanguageType**
 * LocaleType
 * TimezoneType
 * CurrencyType
@@ -92,7 +92,8 @@ import BobForm, {
     RangeType,
 
     ChoiceType,
-    CountryType
+    CountryType,
+    LanguageType
 } from 'react-native-bob-form';
 
 
@@ -108,14 +109,15 @@ class ReactNativeBobForm extends Component {
             textareaType: 'Aliquam convallis vel dolor ac porta. Vestibulum orci ex, ultricies sit amet urna eu, tempor mattis diam. Sed at lectus libero. Aliquam laoreet, erat in cursus pretium, sem purus semper magna, ornare pharetra erat dolor eget mi.',
             emailType: 'alexey.bob@gmail.com',
             passwordType: '123456789',
-            urlType: 'http://facebook.github.io/react-native',
+            urlType: 'https://www.npmjs.com/package/react-native-bob-form',
             integerType: '12548',
             numberType: '12548.25',
             moneyType: '35.28',
             percentType: '.95',
             rangeType: '10',
             choiceType: 'AG',
-            countryType: 'US'
+            countryType: 'US',
+            languageType: 'FR'
         };
     }
 
@@ -133,6 +135,18 @@ class ReactNativeBobForm extends Component {
         return (
             <ScrollView>
                 <View style={{'marginTop': 55}}>
+                    <LanguageType
+                        options={{
+                            'name': 'languageType',
+                            'nameType': 'name',
+                            'label': 'Language Type',
+                            'data': this.state.languageType,
+                            'preferredChoices': ['FR', 'DE', 'EN'],
+                            'placeholder': 'Please select ...'
+                        }}
+                        onChange={this.onChange}
+                        onValidate={this.onValidate}
+                    />
                     <CountryType
                         options={{
                             'name': 'countryType',
@@ -237,6 +251,3 @@ class ReactNativeBobForm extends Component {
 
 export default ReactNativeBobForm;
 ```
-
-
-
