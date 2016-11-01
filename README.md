@@ -28,7 +28,7 @@ This package comes standard with a large group of field types that cover all of 
 * **LanguageType**
 * **LocaleType**
 * **TimezoneType**
-* CurrencyType
+* **CurrencyType**
 
 #### Date and Time Fields
 
@@ -95,7 +95,8 @@ import BobForm, {
     CountryType,
     LanguageType,
     LocaleType,
-    TimezoneType
+    TimezoneType,
+    CurrencyType
 } from 'react-native-bob-form';
 
 
@@ -121,7 +122,8 @@ class ReactNativeBobForm extends Component {
             countryType: 'US',
             languageType: 'FR',
             localeType: 'en-GB',
-            timezoneType: 'Alaskan Standard Time'
+            timezoneType: 'Alaskan Standard Time',
+            currencyType: 'USD'
         };
     }
 
@@ -139,6 +141,17 @@ class ReactNativeBobForm extends Component {
         return (
             <ScrollView>
                 <View style={{'marginTop': 55}}>
+                    <CurrencyType
+                        options={{
+                            'name': 'currencyType',
+                            'label': 'Currency Type',
+                            'data': this.state.currencyType,
+                            'preferredChoices': ['USD', 'CAD', 'EUR'],
+                            'placeholder': 'Please select ...'
+                        }}
+                        onChange={this.onChange}
+                        onValidate={this.onValidate}
+                    />
                     <TimezoneType
                         options={{
                             'name': 'timezoneType',

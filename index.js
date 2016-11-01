@@ -21,6 +21,7 @@ var BobForm = {
     get LanguageType() { return require('./lib/Form/Extension/Core/Type/LanguageType'); },
     get LocaleType() { return require('./lib/Form/Extension/Core/Type/LocaleType'); },
     get TimezoneType() { return require('./lib/Form/Extension/Core/Type/TimezoneType'); },
+    get CurrencyType() { return require('./lib/Form/Extension/Core/Type/CurrencyType'); },
 
 };
 
