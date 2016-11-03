@@ -23,7 +23,7 @@ This package comes standard with a large group of field types that cover all of 
 #### Choice Fields
 
 * **ChoiceType**
-* EntityType
+* **EntityType**
 * **CountryType**
 * **LanguageType**
 * **LocaleType**
@@ -92,6 +92,7 @@ import BobForm, {
     RangeType,
 
     ChoiceType,
+    EntityType,
     CountryType,
     LanguageType,
     LocaleType,
@@ -123,7 +124,8 @@ class ReactNativeBobForm extends Component {
             languageType: 'FR',
             localeType: 'en-GB',
             timezoneType: 'Alaskan Standard Time',
-            currencyType: 'USD'
+            currencyType: 'USD',
+            entityType: 'GB'
         };
     }
 
@@ -141,6 +143,27 @@ class ReactNativeBobForm extends Component {
         return (
             <ScrollView>
                 <View style={{'marginTop': 55}}>
+                    <EntityType
+                        options={{
+                            'name': 'entityType',
+                            'label': 'Entity Type',
+                            'data': this.state.entityType,
+                            'queryConfiguration': {
+                                'repositoryUrl': 'https://raw.githubusercontent.com/alexeybob/react-native-bob-form/master/lib/Form/Extension/Core/Data/Test/data2.json',
+                                'table': 'countries',
+                                'key': '%key%',
+                                'value': 'name',
+                                'preferredChoices': ['US', 'DE', 'FR']
+                            },
+                            'attr': {
+                                'style': {color: 'black'},
+                                'itemStyle': {fontWeight: 'bold'}
+                            },
+                            'placeholder': 'Please select ...'
+                        }}
+                        onChange={this.onChange}
+                        onValidate={this.onValidate}
+                    />
                     <CurrencyType
                         options={{
                             'name': 'currencyType',
