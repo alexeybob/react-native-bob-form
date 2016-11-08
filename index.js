@@ -24,6 +24,31 @@ var BobForm = {
     get TimezoneType() { return require('./lib/Form/Extension/Core/Type/TimezoneType'); },
     get CurrencyType() { return require('./lib/Form/Extension/Core/Type/CurrencyType'); },
 
+    // Date and Time Fields
+//    get DateType() { return require('./lib/Form/Extension/Core/Type/DateType'); },
+//    get DateTimeType() { return require('./lib/Form/Extension/Core/Type/DateTimeType'); },
+//    get TimeType() { return require('./lib/Form/Extension/Core/Type/TimeType'); },
+//    get BirthdayType() { return require('./lib/Form/Extension/Core/Type/BirthdayType'); },
+
+    // Other Fields
+    get CheckboxType() { return require('./lib/Form/Extension/Core/Type/CheckboxType'); },
+//    get FileType() { return require('./lib/Form/Extension/Core/Type/FileType'); },
+    get RadioType() { return require('./lib/Form/Extension/Core/Type/RadioType'); },
+
+    // Field Groups
+//    get CollectionType() { return require('./lib/Form/Extension/Core/Type/CollectionType'); },
+//    get RepeatedType() { return require('./lib/Form/Extension/Core/Type/RepeatedType'); },
+
+    // Hidden Fields
+//    get HiddenType() { return require('./lib/Form/Extension/Core/Type/HiddenType'); },
+
+    // Buttons
+//    get ButtonType() { return require('./lib/Form/Extension/Core/Type/ButtonType'); },
+//    get ResetType() { return require('./lib/Form/Extension/Core/Type/ResetType'); },
+//    get SubmitType() { return require('./lib/Form/Extension/Core/Type/SubmitType'); },
+
+    // Base Fields
+//    get FormType() { return require('./lib/Form/Extension/Core/Type/FormType'); },
 };
 
 module.exports = BobForm;

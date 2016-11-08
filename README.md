@@ -39,9 +39,9 @@ This package comes standard with a large group of field types that cover all of 
 
 #### Other Fields
 
-* CheckboxType
+* **CheckboxType**
 * FileType
-* RadioType
+* **RadioType**
 
 #### Field Groups
 
@@ -97,7 +97,10 @@ import BobForm, {
     LanguageType,
     LocaleType,
     TimezoneType,
-    CurrencyType
+    CurrencyType,
+
+    CheckboxType,
+    RadioType
 } from 'react-native-bob-form';
 
 
@@ -125,7 +128,9 @@ class ReactNativeBobForm extends Component {
             localeType: 'en-GB',
             timezoneType: 'Alaskan Standard Time',
             currencyType: 'USD',
-            entityType: 'GB'
+            entityType: 'GB',
+            checkboxType: '1',
+            radioType: '0'
         };
     }
 
@@ -143,6 +148,16 @@ class ReactNativeBobForm extends Component {
         return (
             <ScrollView>
                 <View style={{'marginTop': 55}}>
+                    <CheckboxType
+                        options={{'name': 'checkboxType', 'label': 'Checkbox Type', 'data': this.state.checkboxType, 'size': 'medium'}}
+                        onChange={this.onChange}
+                        onValidate={this.onValidate}
+                    />
+                    <RadioType
+                        options={{'name': 'radioType', 'label': 'Radio Type', 'data': this.state.radioType, 'size': 'medium'}}
+                        onChange={this.onChange}
+                        onValidate={this.onValidate}
+                    />
                     <EntityType
                         options={{
                             'name': 'entityType',
