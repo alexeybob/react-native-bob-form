@@ -129,8 +129,8 @@ class ReactNativeBobForm extends Component {
             timezoneType: 'Alaskan Standard Time',
             currencyType: 'USD',
             entityType: 'GB',
-            checkboxType: '1',
-            radioType: '0'
+            checkboxType: 'abc',
+            radioType: 'dfg'
         };
     }
 
@@ -149,12 +149,12 @@ class ReactNativeBobForm extends Component {
             <ScrollView>
                 <View style={{'marginTop': 55}}>
                     <CheckboxType
-                        options={{'name': 'checkboxType', 'label': 'Checkbox Type', 'data': this.state.checkboxType, 'size': 'medium'}}
+                        options={{'name': 'checkboxType', 'label': 'Checkbox Type', 'data': this.state.checkboxType, 'size': 'medium', 'value': 'abc'}}
                         onChange={this.onChange}
                         onValidate={this.onValidate}
                     />
                     <RadioType
-                        options={{'name': 'radioType', 'label': 'Radio Type', 'data': this.state.radioType, 'size': 'medium'}}
+                        options={{'name': 'radioType', 'label': 'Radio Type', 'data': this.state.radioType, 'size': 'medium', 'value': 'dfg'}}
                         onChange={this.onChange}
                         onValidate={this.onValidate}
                     />
