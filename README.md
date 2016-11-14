@@ -29,6 +29,7 @@ This package comes standard with a large group of field types that cover all of 
 * **LocaleType**
 * **TimezoneType**
 * **CurrencyType**
+* **CheckboxGroupType**
 
 #### Date and Time Fields
 

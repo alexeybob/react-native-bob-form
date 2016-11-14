@@ -23,6 +23,7 @@ var BobForm = {
     get LocaleType() { return require('./lib/Form/Extension/Core/Type/LocaleType'); },
     get TimezoneType() { return require('./lib/Form/Extension/Core/Type/TimezoneType'); },
     get CurrencyType() { return require('./lib/Form/Extension/Core/Type/CurrencyType'); },
+    get CheckboxGroupType() { return require('./lib/Form/Extension/Core/Type/CheckboxGroupType'); },
 
     // Date and Time Fields
 //    get DateType() { return require('./lib/Form/Extension/Core/Type/DateType'); },
